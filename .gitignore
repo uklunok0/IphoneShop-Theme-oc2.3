@@ -1,0 +1,14 @@
+admin/
+catalog/
+node_modules/
+system/
+отладка на хостинге/
+
+.env
+opencart_test0.sql
+opencart.loc.zip
+trash-1.jpg
+trash.jpg
+
+!catalog/view/theme/apple/
+!catalog/view/theme/apple/**

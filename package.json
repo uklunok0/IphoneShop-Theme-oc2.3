@@ -1,0 +1,30 @@
+{
+  "name": "opencart-project",
+  "version": "1.1",
+  "description": "OpenCart Gulp Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "I'am",
+  "type": "module",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "browser-sync": "^3.0.2",
+    "cssnano": "^6.0.3",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-util": "^3.0.8",
+    "sass": "^1.75.0",
+    "vinyl-ftp": "^0.6.1"
+  },
+  "dependencies": {
+    "bourbon": "^7.3.0",
+    "bower": "^1.8.14",
+    "dotenv": "^16.4.5",
+    "gulp-clean-css": "^4.3.0",
+    "npm-check-updates": "^16.14.18"
+  }
+}
