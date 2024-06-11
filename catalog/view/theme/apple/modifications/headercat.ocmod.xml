@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>All Categories in Header</name>
+    <code>all_categories_in_header</code>
+    <version>1.0</version>
+    <author>Your Name</author>
+    <file path="catalog/controller/common/header.php">
+        <operation>
+            <search><![CDATA[$data['categories'] = array();]]></search>
+            <add position="replace"><![CDATA[
+                $this->load->model('catalog/category');
+                $this->load->model('catalog/product');
+
+                $categories = $this->model_catalog_category->getCategories(0);
+
+                $filtered_categories = array();
+
+                foreach ($categories as $category) {
+                    if (isset($category['top']) && $category['top']) {
+                        $filtered_categories[] = array(
+                            'name' => $category['name'],
+                            'href' => $this->url->link('product/category', 'path=' . $category['category_id'])
+                        );
+                    }
+                }
+
+                $data['categories'] = $filtered_categories;
+            ]]></add>
+        </operation>
+    </file>
+</modification>

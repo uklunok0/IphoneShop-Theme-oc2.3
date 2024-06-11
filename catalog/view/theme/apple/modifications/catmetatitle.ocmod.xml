@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<code>catmetatitle</code>
+	<name>Category Meta Title</name>
+	<version>1.0</version>
+	<author>WebDesign Master</author>
+	<link>http://webdesign-master.ru</link>
+	<file path="catalog/controller/product/category.php">
+        <operation>
+            <search><![CDATA[
+                $data['heading_title'] = $category_info['name'];
+            ]]></search>
+            <add position="after"><![CDATA[
+                $data['meta_title'] = $category_info['meta_title'];
+            ]]></add>
+        </operation>
+    </file>
+</modification>

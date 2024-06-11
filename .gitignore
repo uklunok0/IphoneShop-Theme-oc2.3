@@ -1,8 +1,14 @@
 admin/
-catalog/
 node_modules/
 system/
+catalog/controller/
+catalog/language/
+catalog/model/
+catalog/view/javascript/
+catalog/view/theme/default/
+catalog/view/theme/apple/libs/
 отладка на хостинге/
+
 
 .env
 opencart_test0.sql
@@ -10,5 +16,3 @@ opencart.loc.zip
 trash-1.jpg
 trash.jpg
 
-!catalog/view/theme/apple/
-!catalog/view/theme/apple/**
